@@ -1,4 +1,4 @@
-export const relativePositionFrom = (evt, svg) => {
+export const relativePositionFrom = (svg, evt) => {
   var CTM = svg.getScreenCTM();
   if (evt.touches) { evt = evt.touches[0]; }
   return {
